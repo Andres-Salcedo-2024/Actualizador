@@ -182,11 +182,6 @@ cron.schedule('0 */15 * * * *', async function gestionarTweets() {
             console.log(error);
           }
         })
-      .catch(
-        async function (error) {
-          await sleep(60000*15)
-          console.log(error)
-        });
       await sleep(60000*3);
     }*/
   }
