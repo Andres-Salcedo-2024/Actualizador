@@ -170,19 +170,7 @@ cron.schedule('0 */15 * * * *', async function gestionarTweets() {
               if(!existe_tweet_usuario){
                 const tweet=new tweets({
                   estado: tweet_usuario.estado,
-                  mensaje: tweet_usuario.texto, 
-                  fecha: tweet_usuario.fecha,
-                  usuario: e
-                });
-                await tweet.save();
-              }
-            }
-          }
-          catch(error){
-            console.log(error);
-          }
-        })
-      await sleep(60000*3);
+      
     }*/
   }
 );
